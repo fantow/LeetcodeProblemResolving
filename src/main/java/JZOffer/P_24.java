@@ -41,6 +41,8 @@ public class P_24 {
     }
 
     // 递归方法
+    // 在递归中，返回的temp就是每次的头结点，这个头结点其实不参与链表翻转中的逻辑
+    // 真正参与逻辑的是head和head.next；因为在处理一个递归中的head和head.next时，
     public static ListNode reverseList2(ListNode head) {
 
         ListNode node = reverse(head);
