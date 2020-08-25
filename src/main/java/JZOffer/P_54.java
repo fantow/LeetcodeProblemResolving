@@ -6,7 +6,7 @@ package JZOffer;
  * @CreateDate
  * @Version: 1.0
  */
-public class P54 {
+public class P_54 {
 
     public static int result = -1;
     public static int count = 0;

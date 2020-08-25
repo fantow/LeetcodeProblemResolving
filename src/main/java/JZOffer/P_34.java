@@ -11,7 +11,7 @@ import java.util.List;
  * @CreateDate
  * @Version: 1.0
  */
-public class P34 {
+public class P_34 {
 
     public static List<List<Integer>> resultList = new ArrayList<>();
 

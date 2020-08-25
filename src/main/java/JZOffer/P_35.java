@@ -13,7 +13,7 @@ import java.util.Map;
  * @CreateDate
  * @Version: 1.0
  */
-public class P35 {
+public class P_35 {
     public static void main(String[] args) {
 //        ---- test1 ----
         Node head = new Node(7);
