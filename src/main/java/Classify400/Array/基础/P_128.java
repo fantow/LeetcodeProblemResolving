@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.Semaphore;
 
 /**
  * @Description:
@@ -71,6 +72,7 @@ public class P_128 {
         int t = find(p);
         // 直接将x的上司设置为t，将路径压缩
         parents.put(x, t);
+
         return t;
     }
 
