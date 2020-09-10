@@ -21,11 +21,45 @@ public class P_151 {
 //        String s = " ";
 
 //        ---- test5 ----
-        String s = "  ";
+//        String s = "  ";
+//
+//        String result = reverseWords(s);
+//        System.out.println(result);
 
-        String result = reverseWords(s);
-        System.out.println(result);
+        String A = "123456";
+        int b = 100;
+
+        String[] results = div(A,b);
+        for(String str : results){
+            System.out.print(str + " ");
+        }
+        System.out.println();
     }
+
+    public static String[] div(String A,int b){
+        String[] results = new String[2];
+
+//        A = new StringBuilder(A).reverse().toString();
+
+        int t = 0;
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0;i < A.length();i++){
+            t = t * 10 + (A.charAt(i) - '0');
+            if(t / b != 0){
+                sb.append(t / b);
+            }
+            t = t % b;
+        }
+
+
+        results[0] = sb.toString();
+        results[1] = String.valueOf(t);
+
+        return results;
+    }
+
+
+
 
     public static String reverseWords(String s) {
         int length = s.length();
