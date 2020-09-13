@@ -39,8 +39,6 @@ public class P_151 {
     public static String[] div(String A,int b){
         String[] results = new String[2];
 
-//        A = new StringBuilder(A).reverse().toString();
-
         int t = 0;
         StringBuilder sb = new StringBuilder();
         for(int i = 0;i < A.length();i++){
