@@ -18,11 +18,8 @@ public class P_151 {
 //        String s = "a good   example";
 
 //        ---- test4 ----
-//        String s = " ";
+        String s = " ";
 
-//        ---- test5 ----
-        String s = "  ";
-//
         String result = reverseWords(s);
         System.out.println(result);
     }
