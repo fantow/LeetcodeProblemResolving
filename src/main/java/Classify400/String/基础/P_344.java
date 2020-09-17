@@ -12,7 +12,7 @@ public class P_344 {
 //        char[] s = {'h','e','l','l','o'};
 
 //        ---- test2 ----
-        char[] s = {'H','a','n','n','a','h'};
+        char[] s = {'H','a','n','n','a','h','a'};
 
         reverseString(s);
         System.out.println(new String(s));
