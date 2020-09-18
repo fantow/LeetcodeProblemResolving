@@ -16,7 +16,33 @@ public class P_344 {
 
         reverseString(s);
         System.out.println(new String(s));
+
+        int a = 2;
+        int k = 10;
+        int p = 3;
+        int result = func1(a,k,p);
+        System.out.println(result);
     }
+
+    static int func(int a,int k,int p){
+        int result = 1;
+        for(int i = 1;i <= k;i++){
+            result = result * a % p;
+        }
+        return result;
+    }
+
+    static int func1(int a,int k,int p){
+        int result = 1;
+        if(k == 1){
+            return a % p;
+        }else{
+            result = func1(a,k/2,p);
+        }
+        return result * result % p;
+    }
+
+
 
     public static void reverseString(char[] s) {
         int length = s.length;

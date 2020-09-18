@@ -69,7 +69,7 @@ public class P_06 {
         return resultArray;
     }
 
-    // 方法2.利用栈.因为方法返回的是int[]，所以无论如何都要占用o(n)的空间复杂度
+    // 方法2.利用栈.因为方法返回的是int[]，所以无论如何都要占用o(n)的空间复杂度.
     public static int[] reversePrint2(ListNode head){
         if(head == null){
             return new int[]{};
