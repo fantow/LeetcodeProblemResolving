@@ -14,6 +14,8 @@ public class P_344 {
 //        ---- test2 ----
         char[] s = {'H','a','n','n','a','h','a'};
 
+//        ---- test3 ----
+
         reverseString(s);
         System.out.println(new String(s));
 
