@@ -8,7 +8,7 @@ import sun.java2d.pipe.SpanShapeRenderer;
  * @CreateDate
  * @Version: 1.0
  */
-// 需要考虑的一个场景是，从头删，所以需要一个冗余结点
+// 需要考虑的一个场景是，从头删，所以需要一个冗余结点.
 public class P_18 {
     public static void main(String[] args) {
         ListNode head = new ListNode(4);
