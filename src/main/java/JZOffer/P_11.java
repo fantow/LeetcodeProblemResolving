@@ -16,6 +16,7 @@ public class P_11 {
     }
 
     // 注意一定要用mid 与 right 比，如果用mid与left比，做不出来。
+    //
     public static int minArray(int[] numbers) {
         int length = numbers.length;
         if(length == 0){
