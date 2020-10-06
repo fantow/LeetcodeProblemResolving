@@ -16,7 +16,7 @@ public class P_21 {
         }
     }
 
-    // 1.方法1,使用swap
+    // 1.方法1,使用swap.
     public static int[] exchange1(int[] nums) {
 
         int length = nums.length;
