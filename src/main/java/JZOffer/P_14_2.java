@@ -50,7 +50,7 @@ public class P_14_2 {
         return result;
     }
 
-    // 大数求余算法2:快速幂求余
+    // 大数求余算法2:快速幂求余。
     public static long getMod2(long x,int a,int p){
         long result = 1;
         while (a > 0){
