@@ -35,7 +35,7 @@ public class P_31 {
         int popIdx = 0;
 
         while(popIdx < length) {
-            // 获取本轮出栈元素
+            // 获取本轮出栈元素.
             int num = popped[popIdx];
 
             if(!assistStack.isEmpty() && num == assistStack.peek()){
