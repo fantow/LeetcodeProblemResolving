@@ -26,7 +26,7 @@ public class P_29 {
         }
     }
 
-    // 利用index 与 rows * cols 判断是否打印结束
+    // 利用index 与 rows * cols 判断是否打印结束.
     public static int[] spiralOrder(int[][] matrix) {
         int rows = matrix.length;
         if(rows == 0){
