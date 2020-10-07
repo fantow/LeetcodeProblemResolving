@@ -25,7 +25,7 @@ public class P_24 {
 
     }
 
-    // 头插法
+    // 头插法,
     public static ListNode reverseList1(ListNode head) {
         ListNode newHead = new ListNode(-1);
         ListNode temp = head;
