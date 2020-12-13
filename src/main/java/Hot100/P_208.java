@@ -98,7 +98,7 @@ public class P_208 {
             char[] chars = prefix.toCharArray();
 
             Map<Character,Node> map = this.root.map;
-            // 需要保证word的结尾是end
+            // 需要保证word的结尾是endfr
             for(int i = 0;i < length;i++){
                 if(!map.containsKey(chars[i])) {
                     return false;
