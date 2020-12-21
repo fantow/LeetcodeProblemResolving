@@ -52,7 +52,6 @@ public class P_72 {
             System.out.println();
         }
 
-
         return dpArr[length1][length2];
     }
 }
