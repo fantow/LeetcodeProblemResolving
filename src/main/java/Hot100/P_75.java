@@ -1,5 +1,7 @@
 package Hot100;
 
+import java.util.Random;
+
 public class P_75 {
     public static void main(String[] args) {
         int[] nums = {2,0,2,1,1,0};
@@ -7,11 +9,46 @@ public class P_75 {
 //        int[] nums = {0};
 //        int[] nums = {2,0};
 //        int[] nums = {1};
-        sortColors(nums);
+//        sortColors(nums);
+
+        quickSort3(nums,0,nums.length - 1);
 
         for(int num : nums){
             System.out.print(num + " ");
         }
+    }
+
+
+    // 使用三路快排解决
+    public static void quickSort3(int[] nums,int left,int right){
+        if(left >= right){
+            return;
+        }
+
+        int p = left + (new Random()).nextInt(right - left + 1);
+        swap(nums,left,p);
+
+        int lt = left;
+        int i = left + 1;
+        int gt = right + 1;
+
+        while (i < gt){
+            if(nums[i] < nums[left]){
+                lt++;
+                swap(nums,lt,i);
+                i++;
+            }else if(nums[i] > nums[left]){
+                gt--;
+                swap(nums,gt,i);
+            }else{
+                i++;
+            }
+        }
+
+        swap(nums,left,lt);
+
+        quickSort3(nums,left,lt - 1);
+        quickSort3(nums,gt,right);
     }
 
 
