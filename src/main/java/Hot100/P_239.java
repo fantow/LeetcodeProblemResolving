@@ -31,7 +31,10 @@ public class P_239 {
 
         int[] resultArr = new int[length - k + 1];
 
+        // fast指向目前窗口的最右侧
         int fast = 0;
+
+        // idx用于记录结果数组的idx
         int idx = 0;
 
         // 还不是比较标准的滑动窗口，应该还要维护一个单调队列
