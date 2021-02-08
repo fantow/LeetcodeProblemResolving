@@ -13,8 +13,6 @@ public class P_665 {
         System.out.println(flag);
     }
 
-
-
     // 需要分情况讨论：
     // 如果i == 1，出现非递增，修改nums[i - 1]
     // 如果 i > 1，出现非递增，并且nums[i] >= nums[i - 2]，修改nums[i - 1]
