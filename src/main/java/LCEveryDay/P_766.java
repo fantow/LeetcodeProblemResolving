@@ -1,5 +1,7 @@
 package LCEveryDay;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class P_766 {
     public static void main(String[] args) {
 //        int[][] matrix = {
@@ -59,6 +61,7 @@ public class P_766 {
                 }
             }
         }
+
 
         return true;
     }
