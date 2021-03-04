@@ -1,5 +1,8 @@
 package Hot100;
 
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class P_2 {
     public static void main(String[] args) {
         ListNode list1 = new ListNode(3);
@@ -20,6 +23,14 @@ public class P_2 {
             System.out.println(node.val);
             node = node.next;
         }
+
+        int[][] nums = {};
+        Arrays.sort(nums, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                return o1[1] - o2[1];
+            }
+        });
 
     }
 
