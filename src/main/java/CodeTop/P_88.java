@@ -26,12 +26,6 @@ public class P_88 {
 
     // 从后向前确定数组顺序
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
-//        if(m == 0){
-//            for(int i = 0;i < n;i++){
-//                nums1[i] = nums2[i];
-//            }
-//            return;
-//        }
 
         int ptr1 = m - 1;
         int ptr2 = n - 1;
