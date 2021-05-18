@@ -50,10 +50,6 @@ public class P_5 {
             }
         }
 
-//        if(start == -1){
-//            return "";
-//        }
-
         return s.substring(start,start + maxLength);
     }
 }
