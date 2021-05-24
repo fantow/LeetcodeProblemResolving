@@ -31,7 +31,6 @@ public class P_209 {
         int minLength = Integer.MAX_VALUE;
 
         while(left <= right && right < length){
-//            System.out.println("left: " + left + " right: " + right + " val: " + sum);
             if(sum >= target){
                 minLength = Math.min(minLength,(right - left + 1));
                 sum -= nums[left++];
